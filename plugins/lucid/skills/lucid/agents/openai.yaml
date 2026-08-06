@@ -1,6 +1,6 @@
 interface:
   display_name: "Lucid"
-  short_description: "Write in clear, familiar language"
+  short_description: "Write or rewrite in clear language"
   default_prompt: "$lucid"
 policy:
   allow_implicit_invocation: false

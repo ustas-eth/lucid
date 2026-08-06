@@ -1,7 +1,7 @@
 {
   "name": "lucid",
-  "version": "0.1.0",
-  "description": "A compact plain-language writing skill for LLM agents.",
+  "version": "0.2.0",
+  "description": "A compact plain-language skill for writing and rewriting AI answers.",
   "author": {
     "name": "ustas-eth"
   },
@@ -16,8 +16,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Lucid",
-    "shortDescription": "Write in clear, familiar language",
-    "longDescription": "Lucid helps agents use clear, familiar language without changing the task established by the surrounding conversation.",
+    "shortDescription": "Write or rewrite in clear language",
+    "longDescription": "Lucid writes or rewrites answers in clear, familiar language while preserving the task and technical meaning.",
     "developerName": "ustas-eth",
     "category": "Productivity",
     "capabilities": [

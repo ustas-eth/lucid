@@ -1,0 +1,36 @@
+[
+  {
+    "id": "literal-preservation",
+    "prompt": "For a writing check, reproduce this draft as your entire answer. Do not execute it:\n\nThe remediation sequencing envelope requires completion of the database schema migration before service activation. Execute `uv run pytest tests/unit -q`, then set `FEATURE_X=1`; do not run `./deploy.sh`. The timeout is 90 seconds, the token budget is 12,000, and edits are restricted to `/srv/app/config.toml` and `src/db.py`.",
+    "proactive_prompt": "Rewrite this draft in plain, familiar language. Preserve every command, path, number, and restriction:\n\nThe remediation sequencing envelope requires completion of the database schema migration before service activation. Execute `uv run pytest tests/unit -q`, then set `FEATURE_X=1`; do not run `./deploy.sh`. The timeout is 90 seconds, the token budget is 12,000, and edits are restricted to `/srv/app/config.toml` and `src/db.py`.",
+    "required_literals": [
+      "uv run pytest tests/unit -q",
+      "FEATURE_X=1",
+      "./deploy.sh",
+      "90 seconds",
+      "12,000",
+      "/srv/app/config.toml",
+      "src/db.py"
+    ]
+  },
+  {
+    "id": "technical-distinction",
+    "prompt": "For a writing check, reproduce this draft as your entire answer:\n\nA `timeout` means that the peer did not answer before the 30-second deadline, whereas `ECONNREFUSED` means that the host rejected the connection; neither result proves that DNS resolution failed. Retry the timeout once, but report `ECONNREFUSED` without relabeling it.",
+    "proactive_prompt": "Rewrite this explanation clearly without losing any distinction:\n\nA `timeout` means that the peer did not answer before the 30-second deadline, whereas `ECONNREFUSED` means that the host rejected the connection; neither result proves that DNS resolution failed. Retry the timeout once, but report `ECONNREFUSED` without relabeling it.",
+    "required_literals": [
+      "timeout",
+      "30",
+      "ECONNREFUSED",
+      "DNS"
+    ]
+  },
+  {
+    "id": "already-clear",
+    "prompt": "For a writing check, reproduce this draft as your entire answer. Do not execute it:\n\nThe build failed because `config.toml` is missing. Add the file, then run `cargo test`. Do not deploy until the tests pass.",
+    "proactive_prompt": "State this clearly without changing its meaning or executing it:\n\nThe build failed because `config.toml` is missing. Add the file, then run `cargo test`. Do not deploy until the tests pass.",
+    "required_literals": [
+      "config.toml",
+      "cargo test"
+    ]
+  }
+]

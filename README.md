@@ -1,35 +1,42 @@
 # Lucid
 
-Lucid is a small writing skill for LLM agents. Invoke it when the current work
-should use clear, familiar language instead of dense or invented terminology.
+Lucid is a small skill that helps an AI agent write in clear, familiar language
+instead of dense or invented terminology.
 
-The skill changes how the agent writes, not what it does. The surrounding
-conversation still determines the task, its scope, and the form of the result.
+The skill controls wording and structure. The surrounding conversation
+determines the task, its scope, and the form of the result.
 
 ## Use
 
-In Codex, invoke the skill directly:
-
-```text
-$lucid
-```
-
-Use it by itself when the current context already makes the next step clear, or
-include it with a request:
+Attach Lucid to a request to shape the next answer:
 
 ```text
 $lucid Explain why this migration is risky.
 ```
 
+Invoke it by itself after a confusing answer to replace that answer with a
+clearer version:
+
+```text
+$lucid
+```
+
+The bare form returns only the rewritten answer and leaves the task at the same
+point.
+
 Codex uses `$` mentions for installed skills. The `/skills` command opens the
 skill picker if you prefer to select it there.
 
-Lucid uses ISO 24495-1 as its main plain-language reference. CEFR B1 and
-ASD-STE100 provide lightweight checks for sentence complexity, direct wording,
-and consistent terminology. The skill does not claim strict conformance to any
-of them.
+Lucid follows the plain-language principles in ISO 24495-1. CEFR B1 and
+ASD-STE100 guide sentence complexity, direct wording, and consistent terms.
 
-## Install
+## Support
+
+Lucid is currently packaged and tested for Codex. Its writing rules are
+independent of the agent that runs them. Contributions that package and test
+them for Claude Code, Hermes, or OpenCode are welcome.
+
+## Install for Codex
 
 ```sh
 codex plugin marketplace add ustas-eth/lucid
@@ -37,6 +44,12 @@ codex plugin add lucid@lucid
 ```
 
 Open a new Codex session after installation.
+
+## Evaluate
+
+Run `./evals/run.py --model MODEL --effort EFFORT` for the bundled smoke cases.
+See [evals](evals/README.md) to replay a difficult exchange from your own Codex
+history and compare the baseline, reactive, and proactive answers.
 
 ## License
 
