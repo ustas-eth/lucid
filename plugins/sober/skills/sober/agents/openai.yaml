@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sober"
+  short_description: "Write in clear, familiar language"
+  default_prompt: "$sober"
+policy:
+  allow_implicit_invocation: false

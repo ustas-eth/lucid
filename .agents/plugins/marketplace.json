@@ -1,0 +1,20 @@
+{
+  "name": "sober",
+  "interface": {
+    "displayName": "Sober"
+  },
+  "plugins": [
+    {
+      "name": "sober",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sober"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "sober",
+  "version": "0.1.0",
+  "description": "A compact plain-language writing skill for LLM agents.",
+  "author": {
+    "name": "ustas-eth"
+  },
+  "homepage": "https://github.com/ustas-eth/sober",
+  "repository": "https://github.com/ustas-eth/sober",
+  "license": "MIT",
+  "keywords": [
+    "plain-language",
+    "writing",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Sober",
+    "shortDescription": "Write in clear, familiar language",
+    "longDescription": "Sober helps agents use clear, familiar language without changing the task established by the surrounding conversation.",
+    "developerName": "ustas-eth",
+    "category": "Productivity",
+    "capabilities": [
+      "Plain-language writing"
+    ],
+    "defaultPrompt": "$sober"
+  }
+}
