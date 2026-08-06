@@ -1,14 +1,14 @@
 {
-  "name": "sober",
+  "name": "lucid",
   "interface": {
-    "displayName": "Sober"
+    "displayName": "Lucid"
   },
   "plugins": [
     {
-      "name": "sober",
+      "name": "lucid",
       "source": {
         "source": "local",
-        "path": "./plugins/sober"
+        "path": "./plugins/lucid"
       },
       "policy": {
         "installation": "AVAILABLE",

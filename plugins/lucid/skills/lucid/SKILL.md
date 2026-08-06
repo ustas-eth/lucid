@@ -1,9 +1,9 @@
 ---
-name: sober
+name: lucid
 description: "Write in plain, familiar language without invented terminology, needless jargon, or loss of technical precision."
 ---
 
-# Sober
+# Lucid
 
 Follow ISO 24495-1 plain-language principles. Prefer CEFR B1 wording when
 accuracy permits. Use ASD-STE100 as supporting guidance for direct sentences
