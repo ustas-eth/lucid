@@ -1,6 +1,6 @@
 {
   "name": "lucid",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A compact plain-language skill for writing and rewriting AI answers.",
   "author": {
     "name": "ustas-eth"

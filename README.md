@@ -14,15 +14,15 @@ Attach Lucid to a request to shape the next answer:
 $lucid Explain why this migration is risky.
 ```
 
-Invoke it by itself after a confusing answer to replace that answer with a
-clearer version:
+Invoke it by itself when the conversation has become hard to follow:
 
 ```text
 $lucid
 ```
 
-The bare form returns only the rewritten answer and leaves the task at the same
-point.
+The bare form treats Lucid as feedback that the current exchange is not clear
+enough. The agent uses the conversation to clarify what matters or continue the
+current task instead of replaying the whole previous response by default.
 
 Codex uses `$` mentions for installed skills. The `/skills` command opens the
 skill picker if you prefer to select it there.
